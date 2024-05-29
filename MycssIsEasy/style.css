@@ -1,0 +1,64 @@
+/* Reset default margin */
+body {
+    margin: 0 ! important;
+}
+
+/* Common styles for all boxes */
+.BOX {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header styles */
+.blue-Box {
+    background-color: #00B7EB;
+}
+
+/* Hero styles */
+.red-Box {
+    background-color: #FF0000;
+}
+
+/* Content styles */
+.green-Box {
+    background-color: #00FF00;
+}
+
+/* Sidebar styles */
+.purple-Box {
+    background-color: #800080;
+}
+
+/* Footer styles */
+.grey-Box {
+    background-color: #444444;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 640px) {
+    body {
+        flex-direction: column;
+    }
+
+}
+
+/* Media query for desktop view */
+@media only screen and (min-width: 640px) {
+    /* body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    #mobile-Desk{
+        display: flex ;
+        flex-direction: row;
+    }
+    .green-Box {
+        width: 50%;
+    }
+    .purple-Box {
+        width: 50%;
+    }
+}
